@@ -15,7 +15,7 @@
         // Sending the API call using XMLHttpRequest object
         unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
         unsplashRequest.onload = addImage;
-        unsplashRequest.setRequestHeader('Authorization', 'Client-ID UjqBQ666NXqAr6GCu5Zwh4nTqso64vH26_pMRhGtk-g');
+        unsplashRequest.setRequestHeader('Authorization', 'Client-ID ');
         unsplashRequest.send();
 
         function addImage() {
@@ -34,7 +34,7 @@
 
                 const articleRequest = new XMLHttpRequest();
                 articleRequest.onload = addArticles;
-                articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=DVbAzrrAMGj0QYkt0qlyJ69OsbsogZuB`);
+                articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=`);
                 articleRequest.send();
 
                 function addArticles() {
